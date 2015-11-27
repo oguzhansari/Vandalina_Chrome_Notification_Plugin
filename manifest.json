@@ -1,0 +1,38 @@
+{
+  "browser_action": {
+    "default_icon": "icons/128.png",
+    "default_popup": "vandalina.html",
+    "default_title": "FCN Press This Chrome Extension"
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "js": [ "jquery.js", "vandalina.js", "general.css", "vandalina.css" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+    }
+  ],
+  "description": "Vandalina E-Ticaret alt yapısına sahip kullanıcılara yönetici bildirimlerini gösteren eklenti.",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "manifest_version": 2,
+  "name": "Vandalina Bildirimler",
+  "permissions": [ "contextMenus", "notifications", "tabs", "http://*/*", "https://*/*" ],
+  "version": "1.0.0"
+}
+
+  //"16": "icon.png",
+  //"32": "icon.png",
+  //"36": "icon.png",
+  //"48": "icon.png",
+  //"57": "icon.png",
+  //"60": "icon.png",
+  //"72": "icon.png",
+  //"76": "icon.png",
+  //"96": "icon.png",
+  //"114": "icon.png",
+  //"152": "icon.png",
+  //"180": "icon.png",
+  //"192": "icon.png"
